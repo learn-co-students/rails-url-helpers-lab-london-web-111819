@@ -1,5 +1,6 @@
 <div>
   <% @students.each do |student| %>
-    <div><%= student.first_name + " " + student.last_name %></div>
+  <%temp_text =  student.first_name + " " + student.last_name%>
+    <div><%= link_to temp_text, student_path(student.id)%></div>
   <% end %>
 </div>
