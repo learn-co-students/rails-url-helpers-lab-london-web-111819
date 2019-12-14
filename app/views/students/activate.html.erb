@@ -1,0 +1,6 @@
+<h1>The current student is: <%= @student.first_name %> </h1>
+<%= form_for @student do |f|%>
+    <h1><%= f.label :Active?%></h1>
+    <%= f.check_box :active %>
+    <%= f.submit %>
+<% end %>
